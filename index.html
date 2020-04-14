@@ -15,18 +15,17 @@
             background-size: contain;
          }
       </style>
+      <script>
+         function showloading() {
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            document.getElementsByTagName("div")[0].style.width = width + "px";
+            document.getElementsByTagName("div")[0].style.height = height + "px";
+            requestAnimationFrame(showloading)
+         }
+      </script>
    </head>
    <body>
-      <div></div>
+      <div onload="showloading()"></div>
    </body>
-   <script>
-      function showloading() {
-         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-         var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-         document.getElementsByTagName("div")[0].style.width = width + "px";
-         document.getElementsByTagName("div")[0].style.height = height + "px";
-         requestAnimationFrame(showloading)
-      }
-      showloading();
-   </script>
 </html>
