@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    max-width: 100%;
+}
+
+article {
+    float: left;
+}
+
+aside {
+    float: right;
+}
+
+section {
+    border-radius: 1em;
+    padding: 8px;
+    margin-bottom: 4px;
+
+    background: rgb(30, 30, 30);
+    position: relative;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+
+footer {
+    clear: both;
+    border-radius: 1em;
+    padding: 8px;
+
+    background: rgb(30, 30, 30);
+    position: relative;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+
+/*/ for the effect */
+section::after {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    content: '';
+    z-index: -1;
+    border-radius: 1em;
+}
+
+article section::after {
+    background: linear-gradient(to right,#5800E2, #FF00E6);
+}
+
+aside section::after {
+    background: linear-gradient(to left,#5800E2, #FF00E6);
+}
+
+footer::after {
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    background: linear-gradient(to top, #5800E2, #FF00E6);
+    content: '';
+    z-index: -1;
+    border-radius: 1em;
+}
+
+button {
+    border-radius: 1em;
+    background: linear-gradient(to top, #5800E2, #FF00E6);
+    padding: 8px;
+    border: 2px black solid;
+}
