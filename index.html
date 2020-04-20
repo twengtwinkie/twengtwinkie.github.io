@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Thuong's Website</title>
-    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="css/text.css" />
-    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="shortcut icon" href="favicon.svg" type="image/svg" />
 </head>
 
 <body>
-    <header>
-        <nav id="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="pages/about-me.html">About Me</a>
-            <a href="pages/projects.html">My Projects</a>
-            <a href="pages/archive.html">Archive</a>
-        </nav>
-    </header>
-    <h1>Home</h1>
-    <article>
-        <section>
-            <h2>Latest Project: Identifying COVID-19</h2>
-            <h4>April 19, 2020</h4>
-            <p>During this unpredictable time, it can be hard to differentiate common cold from influenza, and influenza from the novel coronavirus, along with many more respiratory related diseases. For this reason, I have created a utility to help you find out if the disease is the common cold, influenza, or the novel coronavirus. Please note that this utility is by no means accurate and should be taken with a grain of salt. It should not replace professional advice from your physician. If you have any doubts, please get medical attention.</p>
-        </section>
-    </article>
-    <aside>
-        <section>
-        </section>
-    </aside>
 
-    <footer>
-        <p style="font-size:0.75em">Contact me at <a href="mailto:vot@ismanila.org" target="_blank">vot at ismanila dot org</a></p>
-        <h6>Copyright © Thuong 2020 - Do not distribute</h6>
-    </footer>
-    <script src="js/layout-format.js"></script>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <div class="dropdown">
+            <button onclick="location.href='./projects.html' " class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+    <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
 </body>
 
 </html>
