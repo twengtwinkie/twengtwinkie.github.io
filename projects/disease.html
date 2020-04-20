@@ -27,13 +27,18 @@
     </div>
 
 
-    <h2>Latest Project: Identifying COVID-19</h2>
+    <h2>Identifying COVID-19</h2>
     <h4>April 19, 2020</h4>
-    <p>During this unpredictable time, it can be hard to differentiate common cold from influenza, and influenza from
-        the novel coronavirus, along with many more respiratory related diseases. For this reason, I have created a
-        utility to help you find out if the disease is the common cold, influenza, or the novel coronavirus. Please note
-        that this utility is by no means accurate and should be taken with a grain of salt. It should not replace
-        professional advice from your physician. If you have any doubts, please get medical attention.</p>
+    <p>A utility to help identify COVID-19 from the flu, common cold, or allergies.</p>
+    <div style="border: 2px #cccccc solid; padding: 16px;">
+        <button id="startButton" type="button" onclick="started = true;">Click to Start</button>
+        <p id="questionText">Question text will appear here.</p>
+        <button id="yesButton" type="button" style="display: none;" onclick="var yes = true;">Yes</button>
+        <button id="noButton" type="button" style="display: none;" onclick="var yes = false;">No</button>
+    </div>
+
+    <p>Source: <a href="https://www.msn.com/en-my/health/medical/do-you-have-coronavirus-or-a-cold-cdc-releases-graphic-to-help-people-tell-the-difference/">https://www.msn.com/en-my/health/medical/do-you-have-coronavirus-or-a-cold-cdc-releases-graphic-to-help-people-tell-the-difference</a></p>
+    <script src="../js/covid.js"></script>
 
 
 </body>
