@@ -7,6 +7,15 @@
     <title>Home | Thuong's Website</title>
     <link rel="stylesheet" href="../css/anchor.css" />
     <link rel="shortcut icon" href="favicon.svg" type="image/svg" />
+    <style>
+        button {
+            background: black;
+            color: white;
+            border: 1px solid rgb(226, 40, 81);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,14 +39,16 @@
     <h2>Identifying COVID-19</h2>
     <h4>April 19, 2020</h4>
     <p>A utility to help identify COVID-19 from the flu, common cold, or allergies.</p>
-    <div style="border: 2px #cccccc solid; padding: 16px;">
+    <div style="border: 2px #cccccc solid; padding: 16px; border-radius: 4px;">
         <button id="startButton" type="button" onclick="started = true;">Click to Start</button>
         <p id="questionText">Question text will appear here.</p>
         <button id="yesButton" type="button" style="display: none;" onclick="var yes = true;">Yes</button>
         <button id="noButton" type="button" style="display: none;" onclick="var yes = false;">No</button>
     </div>
 
-    <p>Source: <a href="https://www.msn.com/en-my/health/medical/do-you-have-coronavirus-or-a-cold-cdc-releases-graphic-to-help-people-tell-the-difference/">https://www.msn.com/en-my/health/medical/do-you-have-coronavirus-or-a-cold-cdc-releases-graphic-to-help-people-tell-the-difference</a></p>
+    <p>Source: <a
+            href="https://www.msn.com/en-my/health/medical/do-you-have-coronavirus-or-a-cold-cdc-releases-graphic-to-help-people-tell-the-difference/">https://www.msn.com/en-my/health/medical/do-you-have-coronavirus-or-a-cold-cdc-releases-graphic-to-help-people-tell-the-difference</a>
+    </p>
     <script src="../js/covid.js"></script>
 
 

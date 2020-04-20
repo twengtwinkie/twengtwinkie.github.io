@@ -26,10 +26,10 @@ noButtonEl.onclick = function () {
 
 function next(answer, notEnd) {
     if (answer && notEnd) {
-        textEl.innerText = questions.yes;
+        textEl.innerHTML = questions.yes+"<br/><br/>";
         answers.push(answer);
     } else if (notEnd) {
-        textEl.innerText = questions.no;
+        textEl.innerHTML = questions.no+"<br/><br/>";
         answers.push(answer);
     } else if (!notEnd) {
         answers.push(answer);
@@ -69,7 +69,7 @@ function start() {
     noButtonEl.style.display = "initial";
 
     // main code
-    textEl.innerText = questions.init;
+    textEl.innerHTML = questions.init+"<br/><br/>";
 }
 /* 
  */
