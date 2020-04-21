@@ -11,19 +11,7 @@
 
 <body>
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <div class="dropdown">
-            <button onclick="location.href='./projects.html' " class="dropbtn">My Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="projects/disease.html">Disease Indentification</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
+    <div include-html="main-navbar-content.html">
     </div>
 
 
@@ -47,7 +35,7 @@
     </ul>
     <p>For other past projects, visit the <a href="projects.html">Projects</a> page.</p>
 
-
+    <script src="main-navbar-content.js"></script>
 </body>
 
 </html>

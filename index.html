@@ -10,21 +10,10 @@
 </head>
 
 <body>
-
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <div class="dropdown">
-            <button onclick="location.href='./projects.html' " class="dropbtn">My Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="projects/disease.html">Disease Indentification</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
+    <div class="navbar" include-html="main-navbar-content.html">
+        some
     </div>
+
 
 
     <h2>Latest Project: Identifying COVID-19</h2>
@@ -35,7 +24,7 @@
         that this utility is by no means accurate and should be taken with a grain of salt. It should not replace
         professional advice from your physician. If you have any doubts, please get medical attention.</p>
 
-
+    <script src="main-navbar-content.js"></script>
 </body>
 
 </html>
