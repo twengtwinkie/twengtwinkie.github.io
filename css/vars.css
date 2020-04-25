@@ -1,0 +1,11 @@
+:root {
+    --start-gradient-color: rgb(151, 42, 184);
+    --end-gradient-color: rgb(226, 40, 81);
+
+    --shade1: rgb(113, 30, 138);
+    --shade2: rgb(151, 42, 184);
+    --shade3: rgb(201, 56, 245);
+    --shade4: rgb(128, 23, 45);
+    --shade5: rgb(170, 30, 60);
+    --shade6: rgb(226, 40, 81);
+}

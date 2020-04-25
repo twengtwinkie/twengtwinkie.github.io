@@ -5,3 +5,11 @@ body {
     margin-right: auto;
     font-family: sans-serif;
 }
+
+separator {
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: rgb(24, 28, 40);
+    border-radius: 1px;
+}
