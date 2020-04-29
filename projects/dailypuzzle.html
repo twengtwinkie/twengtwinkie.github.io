@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="../css/anchor.css" />
     <link rel="shortcut icon" href="../favicon.svg" type="image/svg" />
     <style>
-        #container button {
-            background: black;
-            color: white;
-            border: 1px solid rgb(226, 40, 81);
+        #solution-button {
+            background: var(--background);
+            color: var(--foreground);
+            border: 1px solid var(--shade6);
             padding: 4px 8px;
             border-radius: 4px;
+            font-size: 1em;
         }
 
         #problem-container img,
         #solution-container img {
-            background-color: white;
+            filter: invert(var(--image-invert-percent));
         }
     </style>
 </head>
@@ -35,7 +36,8 @@
     <div id="container">
         <h2>Today's Problem</h2>
         <div id="problem-container"></div>
-        <button>Solution</button>
+        <br/>
+        <button id="solution-button">Solution (click to show or hide)</button>
         <div id="solution-container"></div>
     </div>
 

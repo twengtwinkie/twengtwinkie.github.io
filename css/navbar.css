@@ -2,7 +2,7 @@
     margin-left: -50%;
     padding-inline-start: 50%;
     overflow: hidden;
-    background-color:rgb(24, 28, 40);
+    background-color: var(--nav-bar-color);
     border-radius: 4px;
     width: 150%;
 }
@@ -10,7 +10,7 @@
 .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: var(--foreground);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -25,7 +25,7 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: var(--foreground);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -40,15 +40,15 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgb(24, 28, 40);
+    background-color: var(--nav-bar-color);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px var(--shadow-color);
     z-index: 1;
 }
 
 .dropdown-content a {
     float: none;
-    color: white;
+    color: var(--foreground);
     padding: 12px 16px;
     text-decoration: none;
     display: block;

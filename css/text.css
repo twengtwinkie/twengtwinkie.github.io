@@ -19,7 +19,7 @@ h2 {
 p,
 ul,
 li {
-  color: white;
+  color: var(--foreground);
   font-size: 12pt;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
