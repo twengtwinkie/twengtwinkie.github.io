@@ -88,15 +88,11 @@ function checkTheme() {
         `;
     }
     for (let i = 0; i < document.querySelectorAll("a").length; i++) {
-        try {
-            if (document.querySelectorAll("a")[i].href[0] != "h") {
-                if (document.querySelectorAll("a")[i].href[document.querySelectorAll("a")[i].href.length - 1] != "e") {
-                    document.querySelectorAll("a")[i].href = document.querySelectorAll("a")[i].href + "?theme=" + theme;
-                } else {
-                    document.querySelectorAll("a")[i].href = document.querySelectorAll("a")[i].href.split("?")[0] + "?theme=" + theme;
-                }
-            }
-        } catch (TypeError) {}
+        if (document.querySelectorAll("a")[i].href[document.querySelectorAll("a")[i].href.length - 1] != "e") {
+            document.querySelectorAll("a")[i].href = document.querySelectorAll("a")[i].href + "?theme=" + theme;
+        } else {
+            document.querySelectorAll("a")[i].href = document.querySelectorAll("a")[i].href.split("?")[0] + "?theme=" + theme;
+        }
     }
     requestAnimationFrame(checkTheme);
 }
