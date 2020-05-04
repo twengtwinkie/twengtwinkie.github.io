@@ -1,10 +1,8 @@
 .navbar {
-    margin-left: -50%;
-    padding-inline-start: 50%;
     overflow: hidden;
     background-color: var(--nav-bar-color);
     border-radius: 4px;
-    width: 150%;
+    min-width: 500px;
 }
 
 .navbar a {
@@ -14,6 +12,21 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.navbar .theme-toggle {
+    padding-left: 8px;
+}   
+
+.navbar .switch {
+    float: left;
+    margin-right: 0;
+    margin-top: calc(calc(46px - 34px) * 0.5);
+}
+
+.navbar div.theme-toggle {
+    display: flex;
+    justify-content: right;
 }
 
 .dropdown {
@@ -32,7 +45,7 @@
     margin: 0;
 }
 
-.navbar a:hover,
+.navbar a:hover:not(.theme-toggle),
 .dropdown:hover .dropbtn {
     background: linear-gradient(45deg, var(--start-gradient-color), var(--end-gradient-color));
 }

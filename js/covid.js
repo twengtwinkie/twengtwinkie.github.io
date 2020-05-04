@@ -50,7 +50,6 @@ function next(answer, notEnd) {
                 textEl.innerHTML = "<br/>You MAY have the common cold. Some other symptoms you may have are <ul><li>Sneezing</li><li>Running nose</li><li>Mild chest discomfort</li></ul>";
             }
         }
-        console.log(answers);
         yesButtonEl.style.display = "none";
         noButtonEl.style.display = "none";
         startButtonEl.style.display = "initial";
